@@ -1,7 +1,13 @@
 # NORDHEALTH-INTERVIEW
 
+Locally:
+
 1. `npm install`
 2. `npm run dev`
+
+Using docker:
+
+`docker compose up`
 
 ## Testing
 - Unit: `npm run test:unit`
