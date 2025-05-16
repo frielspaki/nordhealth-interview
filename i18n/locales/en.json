@@ -1,0 +1,19 @@
+{
+  "app.name": "Nordhealth Interview",
+
+  "actions.sign_up": "Sign Up",
+  "actions.cancel": "Cancel",
+  "actions.submit": "Submit",
+  "actions.back": "Back",
+
+  "aria.label.navigate_to_sign_up": "Navigate to signup",
+
+  "label.first_name": "First name",
+  "label.last_name": "Last name",
+  "label.email": "Email",
+  "label.password": "Password",
+  "label.marketing_agreement": "Receive occasional product updates and announcements.",
+
+  "error.message.required": "Field is required.",
+  "error.message.valid_email": "Field has to be a valid email."
+}
