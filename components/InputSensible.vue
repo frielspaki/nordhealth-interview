@@ -6,7 +6,8 @@ const props = withDefaults(defineProps<{
     reveal?: boolean,
     label?: string,
     error?: string,
-    required?: boolean
+    required?: boolean,
+    ariaLabel?: string
 }>(), {
     id: 'input-sensible',
     expand: false,
@@ -38,7 +39,9 @@ const toogleRevealAction = (): boolean => _reveal.value = !_reveal.value;
                    spellcheck="false"
                    :aria-invalid="error !== undefined"
             />
-            <provet-icon class="input-reveal" :name="icon" size="l" @click="toogleRevealAction" />
+            <button class="input-reveal" type="button" @click="toogleRevealAction" :aria-label="ariaLabel">
+                <provet-icon :name="icon" size="l"/>
+            </button>
         </div>
 
         <span v-if="error" class="n-caption n-error">{{ error }}</span>
@@ -58,9 +61,13 @@ const toogleRevealAction = (): boolean => _reveal.value = !_reveal.value;
 }
 
 .input-container > .input-reveal {
+    padding: 0;
+    margin: 0;
     cursor: pointer;
     position: absolute;
     right: 1rem;
+    border: none;
+    background-color: transparent;
 }
 
 .required {

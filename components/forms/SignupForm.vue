@@ -99,6 +99,7 @@ const submitAction = async () => {
                 v-model="form.password"
                 :label="t('label.password')"
                 :error="errors?.password?._errors.shift()"
+                :aria-label="t('aria.label.reveal_password')"
                 expand
                 required
             />
